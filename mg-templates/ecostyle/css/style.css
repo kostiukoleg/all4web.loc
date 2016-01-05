@@ -3353,7 +3353,8 @@ body .wrapper .default-btn:active,
     position: absolute;
     width: 19px;
     height: 13px;
-    background: url("../images/catalog-arrow.png) ") 0 2px no-repeat;
+	display: inline-block;
+    background: url("../images/catalog-arrow.png") no-repeat 0 0;
     top: 15px;
     left: 10px;
 }
@@ -3439,7 +3440,8 @@ body .wrapper .default-btn:active,
 }
 
 .wrapper .mg-menu li .submenu .mg-cat-name a:hover{
-    text-decoration: none;
+    text-decoration: underline;
+	color: #ccc;
 }
 
 .wrapper .mg-menu li .submenu .mg-cat-img{
@@ -3499,7 +3501,7 @@ body .wrapper .default-btn:active,
     //line-height: 42px;
     //height: 42px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-    padding-left: 40px;
+    padding-left: 35px;
     box-shadow: 0 0 13px rgba(0,0,0,1);
 }
 
