@@ -20,9 +20,9 @@
             <li class="<?php echo $active ?> <?php if(!empty($category['image_url'])): ?>cat-img<?php endif; ?>">
                 <a href="<?php echo $category['link']; ?>">
                     <?php if(!empty($category['image_url'])): ?>
-                      <span class="mg-cat-img">
+                      <!--/*<span class="mg-cat-img">
                         <img src="<?php echo SITE.$category['image_url'];?>" alt="<?php echo $category['title']; ?>" title="<?php echo $category['title']; ?>">
-                      </span>
+                      </span>*/-->
                     <?php endif; ?>
                     <?php echo MG::contextEditor('category', $category['title'], $category["id"], "category"); ?>
                     <?php echo $category['insideProduct']?'('.$category['insideProduct'].')':''; ?>
@@ -45,9 +45,9 @@
 
                             <li class="<?php echo $active ?>">
                                 <?php if(!empty($categoryLevel1['image_url'])): ?>
-                                    <div class="mg-cat-img">
+                                    <!--/*<div class="mg-cat-img">
                                         <img src="<?php echo SITE.$categoryLevel1['image_url'];?>" alt="<?php echo $categoryLevel1['title']; ?>" title="<?php echo $categoryLevel1['title']; ?>">
-                                    </div>
+                                    </div>*/-->
                                 <?php endif; ?>
                                 <div class="mg-cat-name" <?php if(empty($categoryLevel1['image_url'])): ?>style="margin:0px;" <?php endif; ?>>
                                     <a href="<?php echo $categoryLevel1['link']; ?>">
@@ -95,13 +95,13 @@
                         <?php else: ?>
                             <li class="<?php echo $active ?>">
                                 <?php if(!empty($categoryLevel1['image_url'])): ?>
-                                    <div class="mg-cat-img">
+                                    <!--/*<div class="mg-cat-img">
                                         <img src="<?php echo SITE.$categoryLevel1['image_url'];?>"  alt="<?php echo $categoryLevel1['title']; ?>" title="<?php echo $categoryLevel1['title']; ?>">
-                                    </div>
+                                    </div>*/-->
                                 <?php endif; ?>
                                 <div class="mg-cat-name" <?php if(empty($categoryLevel1['image_url'])): ?>style="margin:0px;" <?php endif; ?>>
                                     <a href="<?php echo $categoryLevel1['link']; ?>">
-                                        <?php echo MG::contextEditor('category', $categoryLevel1['title'], $categoryLevel1["id"], "category"); ?>
+                                        - <?php echo MG::contextEditor('category', $categoryLevel1['title'], $categoryLevel1["id"], "category"); ?>
                                         <?php echo $categoryLevel1['insideProduct']?'('.$categoryLevel1['insideProduct'].')':''; ?>
                                     </a>
                                 </div>
@@ -114,9 +114,9 @@
             <li class="<?php echo $active ?> <?php if(!empty($category['image_url'])): ?>cat-img<?php endif; ?>">
                 <a href="<?php echo $category['link']; ?>">
                     <?php if(!empty($category['image_url'])): ?>
-                        <span class="mg-cat-img">
+                        <!--/*<span class="mg-cat-img">
                             <img src="<?php echo SITE.$category['image_url'];?>" alt="<?php echo $category['title']; ?>" title="<?php echo $category['title']; ?>">
-                        </span>
+                        </span>*/-->
                     <?php endif; ?>
                     <?php echo MG::contextEditor('category', $category['title'], $category["id"], "category"); ?>
                     <?php echo $category['insideProduct']?'('.$category['insideProduct'].')':''; ?>

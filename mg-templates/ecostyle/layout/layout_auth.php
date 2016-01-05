@@ -4,7 +4,7 @@
     <a href="<?php echo SITE ?>/personal">
       <?php echo empty($thisUser->name)?$thisUser->email:$thisUser->name ?>
     </a>
-    <span class="slash">/</span>
+    <!--<span class="slash">/</span>-->
     <span class="logout-icon"></span>
     <a href="<?php echo SITE ?>/enter?logout=1">выход</a>
   </div>

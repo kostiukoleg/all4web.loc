@@ -3346,20 +3346,20 @@ body .wrapper .default-btn:active,
 }
 
 .wrapper .mg-menu > li.has-menu > a{
-    padding-right: 25px;
+    //padding-right: 25px;
 }
 
 .wrapper .mg-menu > li.has-menu .toggle{
     position: absolute;
-    width: 5px;
-    height: 7px;
-    background: url("../images/sprite.png") -114px 0 no-repeat;
+    width: 19px;
+    height: 13px;
+    background: url("../images/catalog-arrow.png) ") 0 2px no-repeat;
     top: 15px;
-    right: 10px;
+    left: 10px;
 }
 
 .wrapper .mg-menu > li{
-    border-bottom: 1px solid #E1E3E4;
+    //border-bottom: 1px solid #E1E3E4;
     position: relative;
 }
 
@@ -3414,8 +3414,9 @@ body .wrapper .default-btn:active,
 .wrapper .mg-menu > li .submenu > li{
     //display: inline-block;
     vertical-align: top;
-    width: 45%;
+    //width: 45%;
     margin: 5px;
+	padding: 5px 35px 5px;
 }
 
 .wrapper .mg-menu li .submenu .mg-cat-img img{
@@ -3428,9 +3429,13 @@ body .wrapper .default-btn:active,
 }
 
 .wrapper .mg-menu li .submenu .mg-cat-name a{
-    color: #000;
+    color: #fff;
     font-size: 12px;
-    font-weight: bold;
+    //font-weight: bold;
+	font: 600 normal 16px Arial;
+	text-decoration: none;
+	font-stretch: ultra-condensed;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .wrapper .mg-menu li .submenu .mg-cat-name a:hover{
@@ -3485,8 +3490,17 @@ body .wrapper .default-btn:active,
 }*/
 
 .wrapper .mg-menu > li.cat-img > a{
-    padding-left: 37px;
+    //padding-left: 37px;
     position: relative;
+	font: 600 normal 16px Arial;
+    font-stretch: ultra-condensed;
+    color: #fff;
+    background-color: #5d5047;
+    //line-height: 42px;
+    //height: 42px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    padding-left: 40px;
+    box-shadow: 0 0 13px rgba(0,0,0,1);
 }
 
 .wrapper .mg-menu > li > a > .mg-cat-img{
