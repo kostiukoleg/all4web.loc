@@ -1,0 +1,37 @@
+.wrapper .mg-search-block,
+.cat-title{
+    background: rgb(253,0,0);
+    background: -moz-linear-gradient(top,  rgba(253,0,0,1) 0%, rgba(213,1,1,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,0,0,1)), color-stop(100%,rgba(213,1,1,1)));
+    background: -webkit-linear-gradient(top,  rgba(253,0,0,1) 0%,rgba(213,1,1,1) 100%);
+    background: -o-linear-gradient(top,  rgba(253,0,0,1) 0%,rgba(213,1,1,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(253,0,0,1) 0%,rgba(213,1,1,1) 100%);
+    background: linear-gradient(to bottom,  rgba(253,0,0,1) 0%,rgba(213,1,1,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd0000', endColorstr='#d50101',GradientType=0 );
+    box-shadow: 0 3px 0 #B50101;
+}
+
+.wrapper .container .center .personal-tabs-list li.ui-state-active a,
+.product-tabs li.active a{
+    border-top: 3px solid #FD0000;
+}
+
+.wrapper .ui-slider .ui-slider-range,
+.wrapper .container .center .personal-tabs-list li a:hover,
+.product-tabs li a:hover{
+    background: #B50101;
+}
+
+.wrapper .mg-product-to-compare .mg-compare-count,
+.wrapper .mg-desktop-cart .small-cart-icon .countsht{
+    background: #ED0101;
+}
+
+.product-wrapper .block-variants,
+.m-p-products:hover .owl-buttons .owl-prev,
+.m-p-products:hover .owl-buttons .owl-next,
+.m-p-products-slider:hover .owl-buttons .owl-next,
+.m-p-products-slider:hover .owl-buttons .owl-prev,
+.product-wrapper:hover{
+    border: 1px solid #E90101;
+}

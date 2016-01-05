@@ -1,0 +1,267 @@
+.mg-compare-products h1{
+    font-size: 22px;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+
+.mg-compare-products .mg-top-scroll{
+    position: relative;
+    top: -16px;
+}
+
+.mg-compare-products .mg-compare-left-side h2{
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.mg-compare-products .mg-compare-left-side{
+    width: 230px;
+    float: left;
+}
+
+.mg-compare-products .mg-compare-left-side .mg-category-list-compare .mg-clear-compared-products{
+    text-decoration: none;
+    color: #08C;
+    border-bottom: 1px dashed #08C;
+    display: inline-block;
+    margin: 10px 0 0 0;
+}
+
+.mg-compare-products .mg-compare-center .mg-compare-product-wrapper{
+	font-size: 0;
+}
+
+.mg-compare-products .mg-compare-center{
+    margin: 0 0 0 235px;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.mg-compare-products .mg-compare-product .mg-compare-product-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.mg-compare-products .mg-compare-product .mg-compare-product-list li{
+    margin: 0 0 5px 0;
+    color: #777;
+}
+
+.mg-compare-products .mg-compare-product .mg-compare-product-inner .buy-container .addToCart{
+    width: auto;
+	position: relative;
+	top: 10px;
+    margin: 0 0 10px 0;
+}
+
+.mg-compare-products .mg-compare-product .mg-compare-product-inner .buy-container .cart_form{
+    float: right;
+    margin: 16px 0 0 0;
+}
+
+.mg-compare-products .mg-compare-product .mg-compare-product-inner{
+    padding: 10px;
+}
+
+.mg-compare-products .mg-compare-product .mg-compare-product-inner .property-form .property-title{
+    font-size: 14px;
+}
+
+.mg-compare-products .mg-compare-center .mg-compare-product .mp-remove-compared-product{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../images/delete.png");
+    top: 10px;
+    right: 10px;
+}
+
+.mg-compare-products .mg-compare-center .mg-compare-product{
+    width: 233px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    white-space: normal;
+}
+
+.mg-compare-products .mg-compare-center .mg-compare-product .mg-compare-product-image img{
+    max-width: 100%;
+}
+
+.mg-compare-products .mg-compare-center .mg-compare-product .mg-compare-product-image{
+    text-align: center;
+    width: 213px;
+}
+
+.mg-compare-products .mg-compare-center .mg-compare-product h2{
+    padding: 0 20px 0 0;
+    margin: 0 0 10px 0;
+}
+
+.mg-compare-products .mg-compare-product + .mg-compare-product{
+    margin: 0 0 0 5px;
+}
+
+.mg-compare-products .mg-compare-fake-table-right{
+    margin: 10px 0 0 0;
+}
+
+.mg-compare-products .mg-compare-fake-table-right .mg-compare-fake-table-row{
+    font-size: 0;
+    white-space: nowrap;
+    min-height: 34px;
+}
+
+.mg-compare-products .mg-compare-fake-table-right .mg-compare-fake-table-row .mg-compare-fake-table-cell{
+    width: 215px;
+    padding: 10px;
+    display: inline-block;
+    height: 17px;
+    vertical-align: top;
+    font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mg-compare-products .block-variants{
+    font-size: 12px;
+}
+
+/*.mg-compare-products .mg-compare-fake-table-left .mg-compare-fake-table-cell:nth-child(odd){*/
+    /*background: #EFEFEF;*/
+/*}*/
+
+.mg-compare-products .mg-compare-fake-table-left .mg-compare-fake-table-cell:nth-child(odd),
+.mg-compare-products .mg-compare-fake-table-right .mg-compare-fake-table-row:nth-child(odd) .mg-compare-fake-table-cell{
+    background: #E7E7E7;
+}
+
+.mg-compare-products .mg-compare-fake-table{
+    position: relative;
+}
+
+.mg-compare-products .mg-compare-fake-table .mg-compare-fake-table-left{
+    position: absolute;
+    bottom: 0;
+    width: 230px;
+}
+
+.mg-compare-products .mg-compare-fake-table .mg-compare-fake-table-left.more-than-three{
+    bottom: 17px;
+}
+
+.mg-compare-fake-table-cell{
+    font-size: 0;
+    position: relative;
+    padding: 0 0 0 5px;
+}
+
+.mg-compare-fake-table-cell.with-tooltip .mg-tooltip{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.mg-compare-fake-table-cell.with-tooltip{
+    padding-left: 20px;
+}
+
+.mg-compare-products .mg-compare-fake-table .mg-compare-fake-table-left .compare-text{
+    padding: 10px 5px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+	/*height: 17px;*/
+	height: 37px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/*������ ��������� ������� �� �����*/
+.mg-product-to-compare{
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    bottom: 0;
+    background: #878E96;
+    height: 35px;
+    width: 215px;
+    line-height: 35px;
+    text-shadow: 0 0 1px rgba(0,0,0,0.5);
+}
+
+.mg-product-to-compare a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.mg-product-to-compare .mg-compare-text{
+    margin: 0 0 0 35px;
+    padding: 0 10px;
+}
+
+.mg-product-to-compare .mg-compare-count{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    background: #A5C747;
+}
+
+.mg-compare-products .mg-compare-fake-table-right .mg-compare-fake-table-row .mg-compare-fake-table-cell + .mg-compare-fake-table-cell{
+	margin: 0 0 0 5px;
+}
+
+.mg-compare-products .mg-tooltip .mg-tooltip-content{
+    position: absolute;
+    z-index: 111;
+    text-align: left;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: 12px;
+    line-height: 19px;
+    box-shadow: 0 1px 23px 1px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+    white-space: normal;
+    width: 200px;
+}
+
+.mg-compare-products .mg-tooltip:hover .mg-tooltip-content{
+    display: block!important;
+}
+
+.mg-compare-products .mg-tooltip:hover{
+    color: #9E9999;
+    border: 1px solid #9E9999;
+}
+
+.mg-compare-products .mg-tooltip{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;
+    color: #1391C7;
+    font-size: 9px;
+    line-height: 14px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #1391C7;
+    cursor: pointer;
+}

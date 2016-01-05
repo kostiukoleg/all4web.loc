@@ -1,0 +1,92 @@
+/*Верстка аяксового поиска*/
+.mg-search-block {
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+.mg-search-block .fastResult {
+    width:  auto;
+    position: absolute;
+    max-height: 194px;
+    overflow: auto;
+    background: #fff;
+    z-index: 115;
+    top: 100%;
+    right: 0;
+    left: 0;
+    border: 1px solid #CDCDCD;
+    box-shadow: 0 0 8px #C4C4C4;
+    padding: 3px;
+    display: none;
+}
+
+.mg-search-block .fast-result-list li {
+    display: block;
+    white-space:  nowrap;
+    margin:  0 0 10px 0;
+}
+
+.mg-search-block .fast-result-list li:hover {
+    background-color: #EFEFEF;
+}
+
+.mg-search-block .fast-result-list li span {
+    font-size: 12px;
+    font-weight: bold;
+    display:  block;
+    color: #DF4141;
+}
+
+.mg-search-block .fast-result-list li span.variant-text{
+    font-weight: normal;
+    color: #1391C7;
+    display: block;
+    margin: 2px 0;
+}
+
+.mg-search-block .fast-result-info{
+    overflow: hidden;
+    line-height: 16px;
+}
+
+.mg-search-block .fast-result-img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0 10px 0 0;
+    text-align: center;
+}
+
+.mg-search-block .fast-result-img img {
+    width: 100%;
+}
+
+.mg-search-block .fast-result-list li a {
+    font-size: 12px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.mg-search-block .search-field {
+    width: 220px;
+    height: 16px;
+    padding: 5px 25px 5px 5px;
+    border: 1px solid #CCCCCC;
+    color: #444;
+    outline: none;
+    border-radius: 5px;
+}
+
+.mg-search-block .search-button {
+    background: url('../images/search-btn.png') 0 0 no-repeat;
+    border: none;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+

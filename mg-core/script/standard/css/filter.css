@@ -1,0 +1,220 @@
+.filter-form .price-slider-list{
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.filter-form .price-slider-list li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+
+.filter-form .filter-select .label-field,
+.filter-form .price-slider-list li span{
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+.filter-form .price-slider-list li input[type="text"].end-price + span{
+    display: inline-block;
+    width: auto;
+    margin: 0 0 10px 0;
+}
+
+.filter-form .price-slider-list li input[type="text"]{
+    width: 50px;
+    margin: 0 5px 0 0;
+}
+
+.filter-form .wrapper-field{
+    margin: 0 0 15px 0;
+}
+
+.filter-form .wrapper-field.filter-buttons{
+    margin: 0;;
+}
+
+.filter-btn{
+    padding: 5px 10px;
+    background: #F1F1F1;
+    border: 1px solid #A0A0A0;
+    border-radius: 3px;;
+}
+
+.filter-btn:hover{
+    background: #EAEAEA;
+}
+
+.mg-viewfilter-all,
+.refreshFilter,
+.mg-viewfilter,
+.filter-preview span a{
+    display: inline-block;
+    color: #1391C7;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 0 0 5px;
+    border-bottom: 1px dashed #1391C7;
+}
+
+.mg-viewfilter-all{
+    margin: 0;
+}
+
+.filter-form .mg-filter .mg-filter-item{
+    text-align: left;
+}
+
+.filter-form select{
+    width: 208px;
+}
+
+.filter-form .mg-filter{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.mg-viewfilter-all:hover,
+.refreshFilter:hover,
+.filter-preview span a:hover,
+.filter-form .mg-filter .mg-filter-item ul .mg-viewfilter:hover{
+    border-bottom: 1px solid transparent;
+}
+
+.filter-form .mg-filter .mg-filter-item{
+    padding: 10px 0;
+    position: relative;
+}
+
+.filter-form .mg-filter .mg-filter-item ul .mg-viewfilter{
+    margin: 3px 3px 0 0; 
+}
+
+.filter-form .mg-filter .mg-filter-item + .mg-filter-item{
+    border-top: 1px solid #CDCDCD;
+}
+
+.filter-form .mg-filter .mg-filter-item ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-form .mg-filter .mg-filter-item ul li{
+    line-height: 14px;
+    margin: 0 0 5px 0;
+}
+
+
+.filter-form .mg-filter .mg-filter-item ul li label{
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+}
+
+.filter-form .mg-filter .mg-filter-item ul li label input[type="checkbox"]{
+    margin: 0 5px 0 0;
+}
+
+.filter-form .mg-filter .mg-filter-item h4{
+    margin: 0 0 5px 0;;
+}
+
+.filter-form{
+    margin: 20px 0;
+    padding: 10px;
+    background: #E9E9E9;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+}
+
+.filter-form #price-slider{
+    width: 195px;
+    margin: 0 auto;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.filter-preview{
+    display:none;
+    font-size:14px;
+    background:#DCDCDC;
+    position:absolute;
+    padding:5px;
+    border:solid 1px #CFCFCF;
+    z-index:1000;
+    margin: 0 0 0 10px;
+}
+.filter-preview span{
+    float:left;
+}
+.filter-form .loader-search{
+    margin-right:5px;
+    float:left;
+    height: 16px;
+    width: 16px;
+    background:url('../images/loader-search.gif') right center no-repeat;
+}
+
+.mg-filter-empty {
+    color: #92862e;
+    border: 1px solid #e1d260;
+    background: #fff6ae;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.mg-filter-item .mg-tooltip .mg-tooltip-content{
+    position: absolute;
+    z-index: 111;
+    text-align: left;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: #fff;
+    top: 27px;
+    max-height: 105px;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: 12px;
+    line-height: 19px;
+    box-shadow: 0 1px 23px 1px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mg-filter-item .mg-tooltip:hover .mg-tooltip-content{
+    display: block!important;
+}
+
+.mg-filter-item .mg-tooltip:hover{
+    color: #9E9999;
+    border: 1px solid #9E9999;
+}
+
+.mg-filter-item .mg-tooltip{
+    display: inline-block;
+    vertical-align: 1px;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 100px;
+    color: #1391C7;
+    font-size: 9px;
+    line-height: 14px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #1391C7;
+    cursor: pointer;
+}
+
+.filter-form .disabled-prop{
+    color: gray;
+}

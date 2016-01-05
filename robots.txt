@@ -1,0 +1,30 @@
+User-agent: Yandex
+Allow: /uploads/
+Disallow: /install/
+Disallow: /mg-admin/
+Disallow: /mg-core/
+Disallow: /mg-pages/
+Disallow: /mg-plugins/
+Disallow: /mg-templates/
+Disallow: /mg-admin 
+Disallow: /personal
+Disallow: /enter
+Disallow: /forgotpass
+Disallow: /registration
+Host: all4web.loc
+
+User-agent: *
+Disallow: /install/
+Disallow: /mg-admin/
+Disallow: /mg-core/
+Disallow: /mg-pages/
+Disallow: /mg-plugins/
+Disallow: /mg-templates/
+Disallow: /mg-admin 
+Disallow: /personal
+Disallow: /enter
+Disallow: /forgotpass
+Disallow: /registration
+Host: all4web.loc
+
+Sitemap: http://all4web.loc/sitemap.xml

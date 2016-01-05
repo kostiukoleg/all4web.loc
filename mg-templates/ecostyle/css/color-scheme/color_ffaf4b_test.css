@@ -1,0 +1,37 @@
+.wrapper .mg-search-block,
+.cat-title{
+    background: #ffaf4b;
+    background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+    background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+    background: -o-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+    background: -ms-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%);
+    background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+    box-shadow:0 3px 0 #DB800E;
+}
+
+.wrapper .container .center .personal-tabs-list li.ui-state-active a,
+.product-tabs li.active a{
+    border-top: 3px solid #FF9C21;
+}
+
+.wrapper .ui-slider .ui-slider-range,
+.wrapper .container .center .personal-tabs-list li a:hover,
+.product-tabs li a:hover{
+    background: #DB800E;
+}
+
+.wrapper .mg-product-to-compare .mg-compare-count,
+.wrapper .mg-desktop-cart .small-cart-icon .countsht{
+    background: #FF9613;
+}
+
+.product-wrapper .block-variants,
+.m-p-products:hover .owl-buttons .owl-prev,
+.m-p-products:hover .owl-buttons .owl-next,
+.m-p-products-slider:hover .owl-buttons .owl-next,
+.m-p-products-slider:hover .owl-buttons .owl-prev,
+.product-wrapper:hover{
+    border: 1px solid #FF9613;
+}

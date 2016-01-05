@@ -1,0 +1,22 @@
+AddType image/x-icon .ico
+AddDefaultCharset UTF-8
+Options +FollowSymlinks
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+#RewriteBase /
+
+#Перенаправление на www.site~
+#RewriteCond %{HTTP_HOST} !^www.
+#RewriteRule (.*) http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_URI} \.(ini|php)$
+RewriteRule ^(.*) index.php [L,QSA]
+</IfModule>
+
+<IfModule mod_php5.c> 
+php_flag magic_quotes_gpc Off
+</IfModule>
+

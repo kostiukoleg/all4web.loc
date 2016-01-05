@@ -1,0 +1,19 @@
+/*recent products*/
+.mg-recent-products{position: relative;margin: 35px 0;}
+.mg-recent-products h2{font-weight: bold;font-size: 22px;margin: 0 0 20px 0;position: relative;padding: 0 20px 0 0;color: #CC0000;display: inline-block;}
+.mg-recent-products h2 .custom-arrow{position: absolute;width: 15px;height: 20px;right: 0;top: 15px;background: url("../images/arrow.png") no-repeat;}
+.mg-recent-products .product-wrapper .product-image{width: auto;}
+.mg-recent-products .product-wrapper .product-name{height: 28px;line-height: 14px;}
+.mg-recent-products .product-wrapper:hover .product-price{visibility: visible;}
+.mg-recent-products .product-wrapper{margin: 0;}
+.mg-recent-products .bx-next,
+.mg-recent-products .bx-prev{top: 50%;}
+.mg-recent-products .bx-prev{left: 0;}
+.mg-recent-products .bx-next{right: 0;}
+.mg-recent-products .bx-prev:hover{background-position:0 -30px;}
+.mg-recent-products .bx-next{background-position:-30px 0!important}
+.mg-recent-products .bx-next:hover{background-position:-30px -30px!important;}
+.mg-recent-products .m-p-products-slider .bx-prev{left:215px;}
+.mg-recent-products .m-p-products-slider .bx-next{left:250px;}
+.mg-recent-products .bx-prev,
+.mg-recent-products .bx-next{position:absolute;top:50%;width:30px;height:30px;display:block;background:url('../images/second-controls2.png') 0 0 no-repeat;text-indent:-999999px;}

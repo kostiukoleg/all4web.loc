@@ -1,0 +1,11 @@
+.admin-wrapper .button-list li a, .admin-wrapper .settings-list > li > a{
+    border-radius: 0;
+}
+
+.upload-csv-form{
+    margin: 10px 0 0 0;
+}
+
+.add-related-product-block .related-wrapper{
+    height: 170px;
+}

@@ -1,0 +1,11 @@
+.icon-payment-1, .icon-payment-2,.icon-payment-5, .icon-payment-6, .icon-payment-7,.icon-payment-8, .icon-payment-9, .icon-payment-10,.icon-payment-11{
+    width: 30px;height: 20px;display: inline-block;margin: 0 0 0 5px;position: relative;top: 5px;}
+.icon-payment-1{background: url("../images/webmoney-icon.png");}
+.icon-payment-2{background: url("../images/yandex-icon.png");}   
+.icon-payment-5{background: url("../images/robokassa-icon.png");width: 63px;height: 19px;}
+.icon-payment-6{background: url("../images/qiwi-icon.png");}
+.icon-payment-7{width: 92px; height: 19px;background: url("../images/alfabank-icon.png");}
+.icon-payment-8{width: 92px; height: 19px;background: url("../images/inter-icon.png");}
+.icon-payment-9{width: 16px;height: 16px;background: url("../images/payanyway.png");}
+.icon-payment-10{background: url("../images/robokassa-icon.png");width: 63px;height: 19px;}
+.icon-payment-11{background: url("../images/alfabank-single-icon.png");width: 30px;height: 19px;}
