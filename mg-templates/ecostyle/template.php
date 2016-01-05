@@ -37,6 +37,7 @@
     <?php mgAddMeta('<link href="' . PATH_SITE_TEMPLATE . '/css/mobile.css" rel="stylesheet" type="text/css" />'); ?>
     <?php mgAddMeta('<script type="text/javascript" src="' . PATH_SITE_TEMPLATE . '/js/owl.carousel.js"></script>'); ?>
     <?php mgAddMeta('<script type="text/javascript" src="' . PATH_SITE_TEMPLATE . '/js/script.js"></script>'); ?>
+	<?php mgAddMeta('<link rel="shortcut icon" type="image/x-icon" href="'. PATH_SITE_TEMPLATE .'/favicon.ico">'); ?>
 
 </head>
 <body <?php backgroundSite(); ?>>
@@ -224,7 +225,7 @@ echo isCatalog() && !isSearch() ? 'catalog-page' : ''; ?>">
 						<p><?php echo MG::getSetting('shopPhone') ?></p>
 						<p>+38 (063) 313-49-82</p>
 					</li>
-					<li id="map"><a href="#">Карта<br>проезда</a></li>
+					<li id="map"><a href="https://www.google.com.ua/maps/place/%D0%AD%D0%BA%D0%BE%D1%81%D1%82%D0%B8%D0%BB%D1%8C/@49.2392329,28.477799,17z/data=!3m1!4b1!4m2!3m1!1s0x472d5b66327df683:0xb70313290b197357?hl=ru" target="_blank">Карта<br>проезда</a></li>
 					<li id="pay" class="left-line">
 					<?php echo MG::get('pages')->getFooterPagesUl(1,1); ?>
 					</li>

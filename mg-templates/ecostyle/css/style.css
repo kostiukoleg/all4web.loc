@@ -546,6 +546,7 @@ body.grey-bg{
 }
 
 .header .mg-desktop-cart .small-cart.show{
+	//margin-top: 15px;
     display: block;
     animation: fadeInUp .2s ease-in-out;
     -webkit-animation: fadeInUp .2s ease-in-out;
@@ -720,7 +721,7 @@ body.grey-bg{
 
 .wrapper .mg-desktop-cart .cart-inner {
     padding: 5px 0 0 35px;
-    z-index: 56;
+    z-index: 0;
     position: relative;
     border-radius: 0;
     background: none!important;
@@ -898,7 +899,6 @@ body.grey-bg{
 
 .center-inner.inner-page{
     clear: both;
-    background: #fff;
     //border-radius: 5px;
 }
 
@@ -3571,6 +3571,7 @@ body .wrapper .default-btn:active,
 }
 
 .wrapper .side-menu + .main-block{
+	background: #fff;
     margin-left: 240px;
     overflow: hidden;
     padding: 0 0 100px 0;
