@@ -13,7 +13,7 @@
 .mg-desktop-cart .small-cart-table tr td{vertical-align:top;}
 .mg-desktop-cart .small-cart-table .small-cart-remove{vertical-align:middle;}
 .mg-desktop-cart .small-cart-table tr {display:inline-block;padding:6px 0;border-bottom:1px solid #ddd;}
-.mg-desktop-cart .small-cart-name{padding:0 10px;width:240px;}
+.mg-desktop-cart .small-cart-name{padding:0 10px;width:238px;}
 .mg-desktop-cart .small-cart-remove a{display:block;width:10px;height:10px;color:#000;font-size:12px;text-decoration:none;line-height:8px;}
 .mg-desktop-cart .checkout-buttons a{color:#000;margin:5px 0;display:inline-block;-webkit-transition: all 0.20s ease-in-out;-moz-transition: all 0.20s ease-in-out;-ms-transition: all 0.20s ease-in-out; -o-transition: all 0.20s ease-in-out;font-size:14px;}
 .mg-desktop-cart .checkout-buttons a:hover{text-decoration:none;}

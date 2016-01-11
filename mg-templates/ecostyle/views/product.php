@@ -73,7 +73,7 @@ mgAddMeta('<script type="text/javascript" src="'.SCRIPT.'standard/js/layout.rela
             </li>
             <li>
               <div class="normal-price" itemprop="price">
-                <span class="price"><?php echo $data['price'] ?> <?php echo $data['currency']; ?></span>
+                <p class="price"><?php echo $data['price'] ?> <span><?php echo $data['currency']; ?></span></p>
               </div>
             </li>
           </ul>

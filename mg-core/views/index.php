@@ -32,7 +32,7 @@
  */
 // Установка значений в метатеги title, keywords, description.
 mgSEO($data);
-//viewData($data['newProducts']);
+//viewData($data['actionButton']);
 ?>
 
 <?php if(!empty($data['newProducts'])): ?>
@@ -53,7 +53,7 @@ mgSEO($data);
               <a href="<?php echo SITE.'/' ?><?php echo isset($item["category_url"])?$item["category_url"]:'catalog/' ?><?php echo htmlspecialchars($item["product_url"]) ?>"><?php echo $item["title"] ?></a>
             </div>
             <div class="product-footer">
-              <span class="product-price"><?php echo priceFormat($item["price"]) ?> <?php echo $data['currency']; ?></span>
+              <p class="product-price"><?php echo priceFormat($item["price"]) ?> <span><?php echo $data['currency']; ?></span></p>
               <div class="product-buttons">
                 <!--Кнопка, кототорая меняет свое значение с "В корзину" на "Подробнее"-->
                  <?php echo $item[$data['actionButton']] ?>
@@ -85,7 +85,7 @@ mgSEO($data);
               <a href="<?php echo SITE.'/' ?><?php echo isset($item["category_url"])?$item["category_url"]:'catalog/' ?><?php echo htmlspecialchars($item["product_url"]) ?>"><?php echo $item["title"] ?></a>
             </div>
             <div class="product-footer">
-              <span class="product-price"><?php echo priceFormat($item["price"]) ?> <?php echo $data['currency']; ?></span>
+              <p class="product-price"><?php echo priceFormat($item["price"]) ?> <span><?php echo $data['currency']; ?></span></p>
               <div class="product-buttons">
                 <!--Кнопка, кототорая меняет свое значение с "В корзину" на "Подробнее"-->
                 <?php echo $item[$data['actionButton']] ?>
@@ -117,10 +117,10 @@ mgSEO($data);
             <a href="<?php echo SITE.'/' ?><?php echo isset($item["category_url"])?$item["category_url"]:'catalog/' ?><?php echo htmlspecialchars($item["product_url"]) ?>"><?php echo $item["title"] ?></a>
           </div>
           <div class="product-footer">
-            <span class="product-price">
+            <p class="product-price">
               <span class="product-old-price"><?php echo $item["old_price"] ?> <?php echo $data['currency']; ?></span>
-              <?php echo priceFormat($item["price"]) ?> <?php echo $data['currency']; ?>
-            </span>
+              <?php echo priceFormat($item["price"]) ?> <span><?php echo $data['currency']; ?></span>
+            </p>
             <div class="product-buttons">
               <!--Кнопка, кототорая меняет свое значение с "В корзину" на "Подробнее"-->
               <?php echo $item[$data['actionButton']] ?>

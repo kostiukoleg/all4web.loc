@@ -998,9 +998,9 @@ class Models_Catalog {
       $arrayProducts[$key]['propertyIdsForCat'] =  MG::get('category')->getPropertyForCategoryById($product['cat_id']);
       $arrayProducts[$key]['currency'] = $currency;
       // Формируем ссылки подробнее и в корзину.
-      $arrayProducts[$key]['actionBuy'] = '<a href="' . SITE . '/catalog?inCartProductId=' . $product["id"] . '" rel="nofollow" class="addToCart product-buy" data-item-id="' . $product["id"] . '">' . MG::getSetting('buttonBuyName') . '</a>';
+      $arrayProducts[$key]['actionBuy'] = '<a href="' . SITE . '/catalog?inCartProductId=' . $product["id"] . '" rel="nofollow" class="addToCart product-buy" data-item-id="' . $product["id"] . '"><span class="cart-ico">' . MG::getSetting('buttonBuyName') . '</span></a>';
       $arrayProducts[$key]['actionCompare'] = '<a href="' . SITE . '/compare?inCompareProductId=' . $product["id"] . '" rel="nofollow" class="addToCompare" data-item-id="' . $product["id"] . '">' . MG::getSetting('buttonCompareName') . '</a>';
-      $arrayProducts[$key]['actionView'] = '<a href="' . SITE . '/' . (isset($product["category_url"]) ? $product["category_url"] : 'catalog') . '/' . $product["product_url"] . '" class="product-info">' . MG::getSetting('buttonMoreName') . '</a>';
+      $arrayProducts[$key]['actionView'] = '<a href="' . SITE . '/' . (isset($product["category_url"]) ? $product["category_url"] : 'catalog') . '/' . $product["product_url"] . '" class="product-info"><span class="cart-ico">' . MG::getSetting('buttonMoreName') . '</span></a>';
       $arrayProducts[$key]['link'] = SITE.'/'.(isset($product["category_url"]) ? $product["category_url"] : 'catalog/').$product["product_url"];
       if (empty($arrayProducts[$key]['currency_iso'])) {
         $arrayProducts[$key]['currency_iso'] = $currencyShopIso;

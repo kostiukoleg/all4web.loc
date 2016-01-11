@@ -138,6 +138,12 @@ echo isCatalog() && !isSearch() ? 'catalog-page' : ''; ?>">
                            <?php layout('mockup_news'); ?>
                         <?php endif; ?>
                         <!--/Блок новостей-->
+						
+						<!-- Блок банера-->
+                        <?php if (isIndex()): ?>
+                           <?php layout('banner'); ?>
+                        <?php endif; ?>
+                        <!--/Блок банера-->
                     </div>
                 </div>
             <?php endif; ?>
@@ -149,9 +155,6 @@ echo isCatalog() && !isSearch() ? 'catalog-page' : ''; ?>">
                     <!--/Вывод аякс поиска-->
 
                     <?php if (isIndex()): ?>
-                        <?php if (class_exists('trigger')): ?>
-                            [trigger-guarantee id="1"]
-                        <?php endif; ?>
                         <div class="main-block">
                             <?php layout('content'); ?>
                         </div>
@@ -194,7 +197,6 @@ echo isCatalog() && !isSearch() ? 'catalog-page' : ''; ?>">
                 <?php if (class_exists('ScrollTop')): ?>
                     [scroll-top]
                 <?php endif; ?>
-
                 <div class="clear"></div>
             </div>
         </div>
