@@ -191,15 +191,21 @@ var category = (function() {
       
       //Клик по стикеру в меню для применения скидки/наценки к вложенным подкатегориям
       $('.admin-center').on('click', '.sticker-menu .discount-apply-follow', function() {
-        admin.indication('error','Доступно только в полной версии Moguta.CMS');  
-        return false;
+        var obj = $(this).parents('.sticker-menu');            
+        admin.ajaxRequest({
+          mguniqueurl: "action/applyRateToSubCategory",
+          id: obj.data('cat-id')   
+        },
+        function(response) {      
+          admin.refreshPanel();
+        });
       });   
       
       
        //Клик по ссылке для установки скидки/наценки
       $('body').on('click', '#add-category-wrapper .discount-setup-rate', function() {
-        admin.indication('error','Доступно только в полной версии Moguta.CMS');  
-        return false;
+        $(this).hide();
+        $('.discount-rate-control').show();
       }); 
       
        //Клик по отмене скидки/наценки 

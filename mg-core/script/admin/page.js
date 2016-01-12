@@ -33,7 +33,7 @@ var page = (function () {
 
       // Вызов модального окна при нажатии на пункт добавления
       $('.admin-center').on('click', '.section-page .add-sub-cat', function () {
-        admin.indication('error','Доступно только в полной версии Moguta.CMS');
+        page.openModalWindow('addSubCategory', $(this).attr('id'));
       });
 
       // Удаление страницы.

@@ -307,7 +307,7 @@ var order = (function () {
       var row = '\
           <tr data-id=' + position.id + ' data-variant=' + (position.variant ? position.variant : 0) + '>\
           <td class="image"><img src="' + position.image_url + '" style="width:50px;"></td>\
-          <td class="title" style="width:238px">' + position.title + '</td>\
+          <td class="title" style="width:240px">' + position.title + '</td>\
           <td class="code" data-code="' + position.code + '">' + position.code + '</td>\
           <td class="weight" data-weight="' + position.weight + '">' + ((position.weight == "undefined" || !position.weight) ? 0 : position.weight) + '</td>\
           <td class="price" data-price="' + position.price + '"  data-fulprice="' + position.fulPrice + '">'+
@@ -377,8 +377,9 @@ var order = (function () {
       switch (type) {
         case 'add':
         {
-          admin.indication('error','Доступно только в полной версии Moguta.CMS');  
-          return false;
+          $(".save-button").attr('id', '');
+          $('.add-order-table-icon').text(lang.TITLE_NEW_ORDER);
+          order.newOrder();
           break;
         }
         case 'edit':
@@ -1067,7 +1068,8 @@ var order = (function () {
      * Получает данные из формы фильтров и перезагружает страницу
      */
     getProductByFilter: function () {
-      admin.indication('error','Доступно только в полной версии Moguta.CMS');
+      var request = $("form[name=filter]").formSerialize();
+      admin.show("orders.php", "adminpage", request + '&applyFilter=1', admin.sliderPrice);
       return false;
     },
 

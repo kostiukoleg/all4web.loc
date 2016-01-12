@@ -765,7 +765,19 @@ class Actioner {
    * @return type
    */
   public function recomendProduct() {
-    $this->messageError = 'Доступно только в полной версии Moguta.CMS';
+	$this->messageSucces = $this->lang['ACT_PRINT_RECOMEND'];
+    $this->messageError = $this->lang['ACT_NOT_PRINT_RECOMEND'];
+
+    $model = new Models_Product;
+    // Обновление.
+    if (!empty($_POST['id'])) {
+      $model->updateProduct($_POST);
+    }
+
+    if ($_POST['recommend']) {
+      return true;
+    }
+
     return false;
   }
 

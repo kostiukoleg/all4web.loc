@@ -184,19 +184,20 @@ var settings = (function () {
         $('input[name="cachePort"]').parent('li').hide();
 
         if($(this).val()=="MEMCACHE"){
-          $(this).val('DB');
-          admin.indication('error','Доступно только в полной версии Moguta.CMS');  
-          return false;
+          $('.memcache-conection').show();	
+          $('input[name="cacheHost"]').parent('li').show();	
+          $('input[name="cachePort"]').parent('li').show();		 
         };	
       });
       
-       $('.admin-center').on('click', '.section-settings .minify-css-and-js', function(){        
-        admin.indication('error','Доступно только в полной версии Moguta.CMS');  
-        return false;
-      });
-      $('.admin-center').on('click', '.section-settings input[name="waterMark"], input[name="waterMarkVariants"]', function(){        
-        admin.indication('error','Доступно только в полной версии Moguta.CMS');  
-        return false;
+       $('.admin-center').on('change', '.section-settings .minify-css-and-js', function(){        
+        if($(this).prop('checked')){
+          $('.create-images-for-css-cache').show(); 
+          $('.warning-create-images').show();
+        }else{
+          $('.create-images-for-css-cache').hide();	
+          $('.warning-create-images').hide();
+        }
       });
       
       $('.admin-center').on('change', '.section-settings  select[name="templateName"]', function(){
@@ -775,10 +776,6 @@ var settings = (function () {
       var deliveryCost = $('input[name=deliveryCost]').val();
       var deliveryDescription = $('input[name=deliveryDescription]').val();
       var free = $('input[name=free]').val();
-      if (free != 0){
-        admin.indication('error', 'Бесплатная доставка доступна в полной версии, оставьте в поле значение = 0');
-        return false;
-      };
       var deliveryActivity = 0;
       var deliveryDate = 0;
       var deliveryYmarket = 0;
@@ -999,14 +996,12 @@ var settings = (function () {
           var deliveryMethod = payment.deliveryMethod ? payment.deliveryMethod : '';
           $('tr#payment_'+payment.id+' td#deliveryHideMethod').text(deliveryMethod);
           
-          if(payment.id==3 || payment.id==2 || payment.id==7 || payment.id==4){
-            paymentArray +='\
-              <label>\
-                <span class="custom-text">'+payment.name+'</span>\
-                <input type="checkbox" name="'+payment.id+'" class="paymentMethod">\
-             </label>\
-            ';
-          }  
+          paymentArray +='\
+            <label>\
+              <span class="custom-text">'+payment.name+'</span>\
+              <input type="checkbox" name="'+payment.id+'" class="paymentMethod">\
+            </label>\
+          ';
         });
         
         $('#add-deliveryMethod-wrapper #paymentArray').html(paymentArray);
