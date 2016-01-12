@@ -1296,7 +1296,7 @@ div.owl-item {
 }*/
 
 .product-wrapper p.product-price{
-	font-size: 24px;
+	font-size: 22px;
     color: #252525;
     float: left;
 	margin-top: 5px;
@@ -4569,4 +4569,55 @@ margin: 10px 0 0 0;
     font-size: 14px;
     padding: 10px 10px;
     font-stretch: ultra-condensed;
+}
+
+.left-onas {
+    width: 456px;
+    float: left;
+}
+
+.right-onas {
+    position: relative;
+	float: right;
+}
+
+.skidki {
+    display: inline-block;
+    width: 150px;
+    height: 119px;
+    position: absolute;
+    background: url(../images/skidki.png) no-repeat;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.left-onas>a {
+    display: inline-block;
+    width: 259px;
+    height: 31px;
+    background-color: #f9c333;
+    color: #333435;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    padding: 0 10px;
+	margin-top: 5px;
+}
+
+.left-onas>a:hover {
+    background-color: #C79308;
+    color: #fff;
+}
+
+.left-onas>h3 {
+    font-size: 24px;
+    color: #665751;
+    margin: 0 0 0 5px;
+	line-height: 1.1;
+}
+
+.left-onas>h3 span {
+    color: #898989;
 }
